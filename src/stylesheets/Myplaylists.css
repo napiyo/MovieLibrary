@@ -1,0 +1,89 @@
+.loadingContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    background-color: #1A1A1A;
+}
+
+.loader {
+    width: 49px;
+    height: 49px;
+    border: 6px solid black;
+    border-top: 6px solid red;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.navBar,
+.navBar div {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.navBar {
+    list-style-type: none;
+}
+
+.menu {
+    cursor: pointer;
+    padding-right: 50px;
+}
+
+.menu li {
+    padding: 0 10px;
+}
+
+.menu li:hover {
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 3px red;
+}
+
+.body {
+    background: #1A1A1A;
+    position: relative;
+    min-height: 100vh;
+    /* color: white; */
+}
+
+.navBarContainer {
+    color: white;
+    background-color: black;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.header {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+#list {
+    width: 150px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+option {
+    font-size: 16px;
+}

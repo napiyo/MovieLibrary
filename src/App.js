@@ -9,6 +9,7 @@ import {
   Navigate,
   Link
 } from "react-router-dom";
+import Myplaylists from "./screens/Myplaylists";
 function App() {
   const user = auth.currentUser;
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route  path="/" element={<Home />} />
 
       <Route path="auth" element={<Authentication />} />
+      <Route path="my-playlists" element={<Myplaylists />} />
 
      
       {/* <Navigate to="/" /> */}

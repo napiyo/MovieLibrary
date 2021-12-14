@@ -1,0 +1,26 @@
+.item_Main_Container {
+    background-color: white;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-radius: 5px;
+    align-content: center;
+    margin: 20px;
+}
+
+.t {
+    padding: 5px 0;
+}
+
+#removeList {
+    border: none;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
