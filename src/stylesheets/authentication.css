@@ -1,0 +1,159 @@
+#mainBackground {
+    background: url(https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1779&q=80) no-repeat fixed center;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    overflow: hidden;
+    width: 50vw;
+    height: 60vh;
+    background-color: #FFFFFF;
+    /* min-width: 300px; */
+    border-radius: 7px;
+    box-shadow: 0 0 30px 4px grey;
+    position: relative;
+}
+
+.leftContainer,
+.leftOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+}
+
+.leftContainer {
+    opacity: 1;
+    z-index: 1;
+    /* transform: translateX(); */
+}
+
+.leftOverlay {
+    background-color: black;
+    color: white;
+    opacity: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.rightContainer,
+.rightOverlay {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.rightContainer {
+    opacity: 0;
+}
+
+.rightOverlay {
+    /* padding: 0 20px; */
+    z-index: 1;
+    padding: 0 15px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.loginContent,
+.SignupContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.loginContent input,
+.SignupContent input {
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    background-color: #EEEEEE;
+    font-size: 16px;
+}
+
+#logInBtn,
+#signupBtn {
+    width: 150px;
+    margin-top: 15px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.rightContainer {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+#slideLeftBtn,
+#slideRight {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loadingContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.loader {
+    width: 49px;
+    height: 49px;
+    border: 6px solid black;
+    border-top: 6px solid red;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}

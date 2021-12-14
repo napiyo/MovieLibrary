@@ -1,0 +1,152 @@
+.navBar,
+.navBar div {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.navBar {
+    list-style-type: none;
+}
+
+.menu {
+    cursor: pointer;
+    padding-right: 50px;
+}
+
+.body {
+    background: #1A1A1A;
+    position: relative;
+    min-height: 100vh;
+}
+
+.navBarContainer {
+    color: white;
+    background-color: black;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.searchBox {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#searchInp {
+    width: 400px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+}
+
+#searchInp:hover {
+    box-shadow: 0 0 15px 2px white;
+}
+
+#searchBtn {
+    border: solid white 1px;
+    margin-left: 30px;
+    /* height: 35px; */
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    color: red;
+    background-color: white;
+    box-shadow: 0 0 15px 2px red;
+}
+
+.moviesBox {
+    background-color: white;
+    margin: 30px auto;
+    position: relative;
+    width: 50vw;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.upperMovieDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftMovieDetails {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    justify-content: center;
+}
+
+#moviePoster {
+    height: 200px;
+    /* width: auto; */
+}
+
+.titile {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#addtoList {
+    padding: 5px 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.plot {
+    height: 100%;
+    margin-top: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(209, 240, 255);
+}
+
+.moviesFooter {
+    width: 100%;
+}
+
+.loadingContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.loader {
+    width: 49px;
+    height: 49px;
+    border: 6px solid black;
+    border-top: 6px solid red;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
